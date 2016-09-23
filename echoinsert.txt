@@ -1,1 +1,1 @@
-echo kalimat atau kata >> text.txt
+echo "kalimat atau kata" >> text.txt
