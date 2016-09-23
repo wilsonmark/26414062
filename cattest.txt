@@ -1,0 +1,2 @@
+echo "ini isi file" >> text.txt
+cat text.txt
