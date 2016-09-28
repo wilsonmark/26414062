@@ -1,0 +1,5 @@
+# Memberitahu berapa baris, kata, karakter pada file
+wc text.txt
+8 10 15 text.txt
+
+# 8 baris, 10 kata, 15 karakter
