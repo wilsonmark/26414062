@@ -1,0 +1,8 @@
+# Mengganti "kata" yang muncul pertama kali dengan "katalain" pada file text.txt
+sed 's/kata/katalain/' text.txt
+
+# Mengganti "kata" yang muncul ketiga kali dengan "katalain" --||--
+sed 's/kata/katalain/3'
+
+#Mengganti semua "kata" dengan "katalain" --||--
+sed 's/kata/katalain/g'
