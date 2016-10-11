@@ -1,0 +1,18 @@
+--No.1--
+
+curl -L elevenia.co.id/prd-apple-iphone-7-plus-black-128gb-garansi-6242166 | grep -i <span class="price normalDisc notranslate"> > no1.txt
+
+sed -r 's/.\*\">//' no1.txt > no1cut.txt
+
+--No.2--
+
+curl -L stats.labs.apnic.net/ipv6/ID | grep -i ipv6/AS > no2.txt
+
+sed -r 's/<span class="price normalDisc notranslate">//' no2.txt > no2cut.txt
+
+--No.3--
+
+no2cut.txt > no2.tex
+
+--No.4--
+
