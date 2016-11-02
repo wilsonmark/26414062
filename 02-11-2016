@@ -4,3 +4,10 @@ sed 's/<span class="price notranslate">Rp //g' hargacut.txt > hargacut1.txt
 sed 's/<\/span>//g' hargacut1.txt > hargacut2txt
 sed 's/\.//g' hargacut2.txt > hargacutfinal.txt
 cat hargacutfinal.txt
+
+//Method 2
+
+curl www.elevenia.co.id/prd-apple-iphone-4s-64gb-garansi-distributor-1-tahun-6009004 > harga.txt
+grep 'price notranslate">Rp' harga.txt > hargacut.txt
+sed 's/[a-z,A-Z,.,<,>,=,\/,"]//g' hargacut.txt > hargacutfinal.txt
+cat hargacutfinal.txt
