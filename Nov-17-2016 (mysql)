@@ -1,0 +1,14 @@
+//login
+
+mysql -u username -p
+
+// mysql>
+
+show databases;
+create database tos_14062db;
+use tos_14062db;
+show table;
+create table test (nama varchar(10), nomor smallint);
+insert into test values ('hai',1234);
+insert into test values ('der',5678);
+select * from test;
