@@ -1,5 +1,7 @@
-import MySQLdb;
-db = MySQLdb.connect("localhost","m26414062","<password>","tos_14062");
-cursor = db.cursor();
-cursor.execute(...);
-.....
+import MySQLdb
+db = MySQLdb.connect("localhost","m26414062","<password>","tos_14062")
+cursor = db.cursor()
+cursor.execute("SELECT VERSION()")
+data = cursor.fetchone()
+print "Database version : %s" % data
+db.close
