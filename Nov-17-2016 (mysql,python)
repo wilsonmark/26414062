@@ -1,5 +1,5 @@
 import MySQLdb
-db = MySQLdb.connect("localhost","m26414062","<password>","tos_14062")
+db = MySQLdb.connect("localhost","m26414062","<password>","tos_14062db")
 cursor = db.cursor()
 cursor.execute("SELECT VERSION()")
 data = cursor.fetchone()
